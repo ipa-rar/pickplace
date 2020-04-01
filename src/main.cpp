@@ -2,7 +2,6 @@
 #include "behaviortree_cpp_v3/loggers/bt_cout_logger.h"
 #include "behaviortree_cpp_v3/loggers/bt_file_logger.h"
 #include "behaviortree_cpp_v3/loggers/bt_minitrace_logger.h"
-#include "behaviortree_cpp_v3/loggers/bt_json_dynamic.h"
 
 #include <unistd.h>
 #include <stdio.h>
@@ -188,14 +187,12 @@ static const char* xml_text = R"(
     auto tree = factory.createTreeFromFile(xml_filename);
 
     // This logger prints state changes on console
-    StdCoutLogger logger_cout(tree);
+    // StdCoutLogger logger_cout(tree);
 
     // This logger saves state changes on file
     // FileLogger logger_file(tree, "bt_trace.fbl");
 
     // This logger stores the execution time of each node
-    // MinitraceLogger logger_minitrace(tree, "bt_trace.json");
-    JsonDynamicLogger logger_json_file(tree, "bt_trace.json");
 #ifdef ZMQ_FOUND
     PublisherZMQ publisher_zmq(tree);
 #endif
