@@ -57,7 +57,7 @@
   <depend>dynamic_reconfigure </depend>
   <depend>dynamic_parameter</depend>
   <depend>ar_marker_detector</depend>
-<build_depend>roslaunch</build_depend>
+  <build_depend>roslaunch</build_depend>
 
 
   <build_depend>moveit_core</build_depend>
@@ -90,8 +90,8 @@
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>tf</exec_depend>
   <exec_depend>tf_conversions</exec_depend>
-  <exec_depend>ur_msgs</exec_depend>
-  <exec_depend>behaviortree_cpp_v3</exec_depend>
+  <!-- <exec_depend>ur_msgs</exec_depend>-->
+  <!-- <exec_depend>behaviortree_cpp_v3</exec_depend>-->
   <exec_depend>interactive_markers</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
