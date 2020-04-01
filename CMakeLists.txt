@@ -235,9 +235,9 @@ target_link_libraries(main robot_function robot_gripper
  robot_others btnodes_others)
 
 ## error can't find behaviortree_cpp_v3
-target_link_libraries(main
-   ${BEHAVIOR_TREE_LIBRARY}   bt_sample_nodes 
- )
+#target_link_libraries(main
+#   ${BEHAVIOR_TREE_LIBRARY}   bt_sample_nodes 
+# )
 
 #target_link_libraries(main
 #   ${bt_nodes_LIBRARIES} bt_nodes
